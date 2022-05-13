@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+$primary-dark-magenta: hsl(300, 43%, 22%);
+$primary-soft-pink: hsl(333, 80%, 67%);
+$neutral-dark-gray-magenta: hsl(303, 10%, 53%);
+$neutral-magenta: hsl(300, 24%, 96%);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1rem;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 1rem;
+
+        .top-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .hero-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .hero-header {
+                    width: 80%;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-align: center;
+                    color: $primary-dark-magenta;
+                }
+
+                .hero-subheading {
+                    margin: 2rem 0 0 0;
+                    color: $neutral-dark-gray-magenta;
+                    text-align: center;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 1.3rem;
+                    word-spacing: 1px;
+                }
+            }
+
+            .ratings {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: .8rem;
+                margin-top: 2rem;
+
+                .rating-card {
+                    background-color: $neutral-magenta;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    color: $primary-soft-pink;
+                    // padding: .8rem 0;
+
+                    .stars {
+                        margin-top: .8rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .5rem;
+
+                        .star-icon {
+                            width: 1rem;
+                            height: 1rem;
+                            background: url('./images/icon-star.svg');
+                        }
+                    }
+
+                    p {
+                        font-weight: 700;
+                        color: $primary-dark-magenta;
+                    }
+                }
+            }
+
+
+        }
+
+        .bottom-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            gap: 1rem;
+
+            .review-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: white;
+                background-color: $primary-dark-magenta;
+                padding: 2.5rem 2rem 1rem 2rem;
+                border-radius: 8px;
+
+                .user-info {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .user-img img {
+                        height: 3rem;
+                        width: 3rem;
+                        border-radius: 50%;
+                    }
+
+                    .user-name {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        font-weight: 500;
+                        gap: .3rem;
+
+                        span {
+                            color: $primary-soft-pink;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .user-review {
+                    color: $neutral-magenta;
+                    line-height: 1.3rem;
+                }
+            }
+        }
+
+        .attribution {
+            margin-top: 5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    body {
+        main {
+            justify-content: center;
+            align-items: center;
+            margin: 8rem 10rem;
+
+            .top-row {
+                flex-direction: row;
+                gap: 5rem;
+
+                .hero-section {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 100%;
+
+                    .hero-header {
+                        text-align: left;
+                        font-size: 3rem;
+                        width: 65%;
+                    }
+
+                    .hero-subheading {
+                        width: 80%;
+                        text-align: left;
+                    }
+                }
+
+                .ratings {
+                    align-items: flex-start;
+                    position: relative;
+                    margin-top: 0;
+
+                    .rating-card {
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0 2rem;
+                        width: 80%;
+                        gap: 2rem;
+                        margin-left: 0;
+
+                        .stars {
+                            margin-top: 0;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 3rem;
+                        }
+
+                        &:nth-child(3) {
+                            margin-left: 6rem;
+                        }
+                    }
+                }
+            }
+
+            .bottom-row {
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+            .review-card {
+
+                &:nth-child(2) {
+                    margin-top: 3rem;
+                }
+
+                &:nth-child(3) {
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+}

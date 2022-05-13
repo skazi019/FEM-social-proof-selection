@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1rem;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem 1rem;
+}
+
+body main .top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .top-row .hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .top-row .hero-section .hero-header {
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #502050;
+}
+
+body main .top-row .hero-section .hero-subheading {
+  margin: 2rem 0 0 0;
+  color: #937b92;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  word-spacing: 1px;
+}
+
+body main .top-row .ratings {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .8rem;
+  margin-top: 2rem;
+}
+
+body main .top-row .ratings .rating-card {
+  background-color: #f7f2f7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  color: #ee68a4;
+}
+
+body main .top-row .ratings .rating-card .stars {
+  margin-top: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+body main .top-row .ratings .rating-card .stars .star-icon {
+  width: 1rem;
+  height: 1rem;
+  background: url("./images/icon-star.svg");
+}
+
+body main .top-row .ratings .rating-card p {
+  font-weight: 700;
+  color: #502050;
+}
+
+body main .bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+body main .bottom-row .review-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  background-color: #502050;
+  padding: 2.5rem 2rem 1rem 2rem;
+  border-radius: 8px;
+}
+
+body main .bottom-row .review-card .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+body main .bottom-row .review-card .user-info .user-img img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+body main .bottom-row .review-card .user-info .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 500;
+  gap: .3rem;
+}
+
+body main .bottom-row .review-card .user-info .user-name span {
+  color: #ee68a4;
+  font-weight: 400;
+}
+
+body main .bottom-row .review-card .user-review {
+  color: #f7f2f7;
+  line-height: 1.3rem;
+}
+
+body main .attribution {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 1080px) {
+  body main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8rem 10rem;
+  }
+  body main .top-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5rem;
+  }
+  body main .top-row .hero-section {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+  }
+  body main .top-row .hero-section .hero-header {
+    text-align: left;
+    font-size: 3rem;
+    width: 65%;
+  }
+  body main .top-row .hero-section .hero-subheading {
+    width: 80%;
+    text-align: left;
+  }
+  body main .top-row .ratings {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    margin-top: 0;
+  }
+  body main .top-row .ratings .rating-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2rem;
+    width: 80%;
+    gap: 2rem;
+    margin-left: 0;
+  }
+  body main .top-row .ratings .rating-card .stars {
+    margin-top: 0;
+  }
+  body main .top-row .ratings .rating-card:nth-child(2) {
+    margin-left: 3rem;
+  }
+  body main .top-row .ratings .rating-card:nth-child(3) {
+    margin-left: 6rem;
+  }
+  body main .bottom-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+  body main .review-card:nth-child(2) {
+    margin-top: 3rem;
+  }
+  body main .review-card:nth-child(3) {
+    margin-top: 6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
