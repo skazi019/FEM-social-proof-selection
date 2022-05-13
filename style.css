@@ -26,7 +26,18 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5rem 1rem;
+  margin: 5rem 1.5rem;
+  position: relative;
+}
+
+body main .graphics .graphic1 {
+  position: absolute;
+  left: -2rem;
+  top: -5rem;
+  background: url("./images/bg-pattern-top-mobile.svg") no-repeat;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
 }
 
 body main .top-row {
@@ -250,6 +261,23 @@ body main .attribution {
         -ms-flex-align: center;
             align-items: center;
     margin: 8rem 10rem;
+  }
+  body main .graphics .graphic1 {
+    position: absolute;
+    left: -10rem;
+    top: -8rem;
+    background: url("./images/bg-pattern-top-desktop.svg") no-repeat;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+  }
+  body main .graphics .graphic2 {
+    position: absolute;
+    background: url("./images/bg-pattern-bottom-desktop.svg") no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    right: -12rem;
   }
   body main .top-row {
     -webkit-box-orient: horizontal;
